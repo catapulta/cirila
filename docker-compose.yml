@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  vacuum:
+    container_name: vacuum
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+
