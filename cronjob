@@ -24,7 +24,7 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-0 8 * * MON,WED,FRI /bin/bash -c 'export LANG=C.UTF-8; export LC_ALL=C.UTF-8; /usr/local/bin/sucks clean 55 >> /proc/1/fd/1 2> /proc/1/fd/2'
+0 8 * * MON-FRI /bin/bash -c 'export LANG=C.UTF-8; export LC_ALL=C.UTF-8; /usr/local/bin/sucks clean 55 >> /proc/1/fd/1 2> /proc/1/fd/2'
 # 30 8 * * TUE,THU /bin/bash -c 'export LANG=C.UTF-8; export LC_ALL=C.UTF-8; /usr/local/bin/sucks edge 15 > /proc/1/fd/1 2> /proc/1/fd/2'
 * * * * * date > /proc/1/fd/1 2> /proc/1/fd/2
 
