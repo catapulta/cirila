@@ -1,6 +1,6 @@
 FROM python:3.6.13-slim-buster
 
-RUN apt update && apt install -y git vim cron build-essential
+RUN apt update && apt install -y git vim cron build-essential && apt clean
 
 RUN mkdir sucks && \
     cd sucks && \
