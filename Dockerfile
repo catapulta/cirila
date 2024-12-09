@@ -13,7 +13,7 @@ RUN rm -rf /etc/localtime && ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/
 
 RUN cd sucks && pip install -e . --no-binary :all:
 
-RUN sucks login --email aldo.marini@outlook.com --password laaspiradoraloca --country-code us --continent-code na --verify-ssl True
+RUN sucks login --email cirila@outlook.com --password password --country-code us --continent-code na --verify-ssl False
 
 COPY cronjob /etc/cron.d/cron-vacuum
 
